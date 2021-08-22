@@ -1,6 +1,11 @@
 <html>
 	<head>
 <title>pog click</title>
+<!--fonts-->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<!---Toastify--->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 		<!----FAVICON---->
 			<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -27,24 +32,245 @@
 	</h1>
 </div>
 <div class="pog-img">
-        <img src="2.png" id="pog_image"/>
+        <img src="start.png" id="pog_image"/>
 </div>
 
 <!--javascript-->
 <script language="javascript">
     function angka_count() {
-    	       var angka= 0;       
-   var pog = new Audio('pog.mp3');
+    	       let angka= 0;       
+   const pog = new Audio('pog.mp3');
   pog.play();
-  
+  const achievement = new Audio('achievement.mp3');
+ 
             angka = Number(localStorage.getItem("angka"));
             console.log(angka);
             angka += 1;
             localStorage.setItem("angka",angka);             
             document.getElementById("clicked").innerHTML = angka;
-            
-         }
-            
+if(angka === 1) {
+	Toastify({
+className:"toastify",
+  text: "Don't use cheat program",
+  duration: 2000,
+  gravity: "bottom", 
+  position: "center", 
+  backgroundColor: "linear-gradient(to right, #000, #000)",
+}).showToast();
+	}
+if(angka === 10) {
+	achievement.play();
+	Toastify({
+className:"toastify",
+  text: "Newbie",
+  duration: 5000,
+  gravity: "bottom", 
+  position: "center", 
+  backgroundColor: "linear-gradient(to right,#3495eb, #3195fb)",
+}).showToast();
+	}
+
+if(angka === 50) {
+	achievement.play();
+	Toastify({
+className:"toastify",
+  text: "Starter",
+  duration: 5000,
+  gravity: "bottom", 
+  position: "center", 
+  backgroundColor: "linear-gradient(to right, #3495eb, #3195fb)",
+}).showToast();
+	}
+	if(angka === 200) {
+	achievement.play();
+	Toastify({
+className:"toastify",
+  text: "Tap tap tap",
+  duration: 5000,
+  gravity: "bottom", 
+  position: "center", 
+  backgroundColor: "linear-gradient(to right, #3495eb, #3195fb)",
+}).showToast();
+	}
+if(angka === 500) {
+	achievement.play();
+	Toastify({
+className:"toastify",
+  text: "ur fast...",
+  duration: 5000,
+  gravity: "bottom", 
+  position: "center", 
+  backgroundColor: "linear-gradient(to right, #3495eb, #3195fb)",
+}).showToast();
+	}
+if(angka === 1100) {
+	achievement.play();
+	Toastify({
+className:"toastify",
+  text: "Be careful",
+  duration: 5000,
+  gravity: "bottom", 
+  position: "center", 
+  backgroundColor: "linear-gradient(to right, #3495eb, #3195fb)",
+}).showToast();
+	}
+if(angka === 5000) {
+	achievement.play();
+	Toastify({
+className:"toastify",
+  text: "That sick",
+  duration: 5000,
+  gravity: "bottom", 
+  position: "center", 
+  backgroundColor: "linear-gradient(to right, #3495eb, #3195fb)",
+}).showToast();
+	}
+if(angka === 7000) {
+	achievement.play();
+	Toastify({
+className:"toastify",
+  text: "Screen Destroyer",
+  duration: 5000,
+  gravity: "bottom", 
+  position: "center", 
+  backgroundColor: "linear-gradient(to right, #3495eb, #3195fb)",
+}).showToast();
+	}
+if(angka === 7500) {
+	achievement.play();
+	Toastify({
+className:"toastify",
+  text: "I think you love this game",
+  duration: 5000,
+  gravity: "bottom", 
+  position: "center", 
+  backgroundColor: "linear-gradient(to right, #3495eb, #3195fb)",
+}).showToast();
+	}
+if(angka === 10000) {
+	achievement.play();
+	Toastify({
+className:"toastify",
+  text: "The Great Clicker",
+  duration: 5000,
+  gravity: "bottom", 
+  position: "center", 
+  backgroundColor: "linear-gradient(to right, #3495eb, #3195fb)",
+}).showToast();
+	}
+if(angka === 12000) {
+	achievement.play();
+	Toastify({
+className:"toastify",
+  text: "holy sheesssh",
+  duration: 5000,
+  gravity: "bottom", 
+  position: "center", 
+  backgroundColor: "linear-gradient(to right, #3495eb, #3195fb)",
+}).showToast();
+	}
+if(angka === 16000) {
+	achievement.play();
+	Toastify({
+className:"toastify",
+  text: "Ok gamer",
+  duration: 5000,
+  gravity: "bottom", 
+  position: "center", 
+  backgroundColor: "linear-gradient(to right, #3495eb, #3195fb)",
+}).showToast();
+	}
+if(angka === 20000) {
+	achievement.play();
+	Toastify({
+className:"toastify",
+  text: "POG POG POG",
+  duration: 5000,
+  gravity: "bottom", 
+  position: "center", 
+  backgroundColor: "linear-gradient(to right, #3495eb, #3195fb)",
+}).showToast();
+	}
+if(angka === 50000) {
+	achievement.play();
+	Toastify({
+className:"toastify",
+  text: "Still playing?",
+  duration: 5000,
+  gravity: "bottom", 
+  position: "center", 
+  backgroundColor: "linear-gradient(to right, #3495eb, #3195fb)",
+}).showToast();
+	}
+if(angka === 100000) {
+	achievement.play();
+	Toastify({
+className:"toastify",
+  text: "Aw man...",
+  duration: 5000,
+  gravity: "bottom", 
+  position: "center", 
+  backgroundColor: "linear-gradient(to right, #3495eb, #3195fb)",
+}).showToast();
+	}
+if(angka === 500000) {
+	achievement.play();
+	Toastify({
+className:"toastify",
+  text: "Super!!!",
+  duration: 5000,
+  gravity: "bottom", 
+  position: "center", 
+  backgroundColor: "linear-gradient(to right, #3495eb, #3195fb)",
+}).showToast();
+	}
+if(angka === 1000001) {
+	achievement.play();
+	Toastify({
+className:"toastify",
+  text: "Congrats, u r milioner",
+  duration: 5000,
+  gravity: "bottom", 
+  position: "center", 
+  backgroundColor: "linear-gradient(to right, #3495eb, #3195fb)",
+}).showToast();
+	}
+if(angka === 500000) {
+	achievement.play();
+	Toastify({
+className:"toastify",
+  text: "No PowerUp",
+  duration: 5000,
+  gravity: "bottom", 
+  position: "center", 
+  backgroundColor: "linear-gradient(to right, #3495eb, #3195fb)",
+}).showToast();
+	}
+if(angka === 10000000) {
+	achievement.play();
+	Toastify({
+className:"toastify",
+  text: "this is the last",
+  duration: 5000,
+  gravity: "bottom", 
+  position: "center", 
+  backgroundColor: "linear-gradient(to right, #3495eb, #3195fb)",
+}).showToast();
+	}
+if(angka === 999999999) {
+	achievement.play();
+	Toastify({
+className:"toastify",
+  text: "POGGERS!",
+  duration: 5000,
+  gravity: "bottom", 
+  position: "center", 
+  backgroundColor: "linear-gradient(to right, #3495eb, #3195fb)",
+}).showToast();
+	}
+	
+}
+
             
             function click_pog() {
         var pog_click = document.getElementById('pog_image');
@@ -56,6 +282,7 @@
   pog_reset.setAttribute("src", "2.png");
 }
 
+
         function load()
            {
            if(localStorage.getItem("counter")!=null)
@@ -64,5 +291,4 @@
                      document.getElementById("counterValue").innerHTML = counter;
                  }
            }
-           
           </script>

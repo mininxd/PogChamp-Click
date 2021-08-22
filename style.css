@@ -9,8 +9,6 @@
 	outline:none;
 	line-height:5px;
 	color:#fff;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
 	font-family: 'impactreg';
 	}
 	h1{font-size:65px;}
@@ -42,7 +40,20 @@ img {
 .count {
 	transition: all 0.2s ease-in-out; 
 	}
+
+.toastify {
+	margin:10px;
+	width:auto;
+	max-width:100%;
+	height:22px;
+	padding-bottom:5px;
+	font-family: 'Poppins', sans-serif;
+	color:#fff;
+	font-size:20px;
+	}
 .centered-top {
+	  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 	z-index:1;
 	  top: 15%;
   left: 50%;
