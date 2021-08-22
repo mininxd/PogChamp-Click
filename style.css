@@ -1,0 +1,64 @@
+@font-face {
+	font-family: 'impactreg';
+	src: url('./impactreg.eot');
+	src: local('impactreg'), url('./impactreg.woff') format('woff'), url('./impactreg.ttf') format('truetype');
+}
+* {
+	line-height:5px;
+	color:#fff;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+	font-family: 'impactreg';
+	}
+	h1{font-size:65px;}
+p {
+	font-size:70px;
+	}
+body {
+ background-image:url('bg.gif');
+ background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+	}
+.pog-img {
+	position:fixed;
+	bottom:-5%;
+	left:-32px;
+	z-index:0;
+	}
+img {
+	width:350px;
+	height:auto;
+	}
+.count {
+	transition: all 0.2s ease-in-out; 
+	}
+.centered-top {
+	z-index:1;
+	  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	position:fixed;
+	text-align:center;
+	padding-top:1em;
+	}
+	
+	/*desktop*/
+@media (orientation:landscape){
+
+	body {
+	background-size:5000px 5000px;
+	}
+	.pog-img {
+		left:30%;
+		}
+	img {width:550px;
+	}
+	p, h1{
+		font-size: 75px;
+		}
+}
+	
+	
+	
+	

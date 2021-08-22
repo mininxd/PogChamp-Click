@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<!----FAVICON---->
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+	<!---tab color--->
+<meta name="theme-color" content="#8e2">
+		<!--CSS-->
+	<link rel="stylesheet" href="style.css">
+		<!--responsive-->
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<!--content-->
+<body onclick="gambar()" onload="load();">
+
+<div class="centered-top">
+	<h1 class="pog-title">POGGERS
+	    <p><a class="count" id="clicked"></a></p>
+	</h1>
+</div>
+<div class="pog-img">
+        <img src="1.png" id="pog_image"/>
+</div>
+
+<!--javascript-->
+<script language="javascript">
+    function gambar() {
+    	       var angka= 0;       
+   var pog = new Audio('pog.mp3');
+  pog.play();
+  
+            angka = Number(localStorage.getItem("angka"));
+            console.log(angka);
+            angka += 1;
+            localStorage.setItem("angka",angka);             
+            document.getElementById("clicked").innerHTML = angka;
+            
+            var poggers = document.getElementById('pog_image');
+            if (poggers.src.match("1.png")) {
+                poggers.src = "2.png";
+            }
+            else {
+                poggers.src = "1.png";
+            }
+        }        
+
+
+
+
+
+
+  function load()
+           {
+           if(localStorage.getItem("counter")!=null)
+                 {
+                     counter = Number(localStorage.getItem("counter"));
+                     document.getElementById("counterValue").innerHTML = counter;
+                 }
+           }
+    </script>
+    
+    
+    
+    
+    

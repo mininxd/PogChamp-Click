@@ -1,0 +1,5 @@
+ErrorDocument 400 http://error.mininprojects.rf.gd/400
+ErrorDocument 401 http://error.mininprojects.rf.gd/401
+ErrorDocument 403 http://error.mininprojects.rf.gd/403
+ErrorDocument 404 http://error.mininprojects.rf.gd/404
+ErrorDocument 503 http://error.mininprojects.rf.gd/503
