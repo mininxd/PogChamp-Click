@@ -1,8 +1,5 @@
 # pog pog pog
+<img width="100px" src="https://raw.githubusercontent.com/minintamvan/PogChamp-Click/main/2.png"/>
 
-Demo version http://poggers.mininprojects.rf.gd
-
-
-
-Buy me as coffee 
-https://saweria.co/mininproject
+## [**Try it**](http://poggers.mininprojects.rf.gd)
+| [**Support me**](https://saweria.co/mininproject)
