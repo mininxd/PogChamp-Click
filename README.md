@@ -1,5 +1,5 @@
 # pog pog pog
 <img width="100px" src="https://raw.githubusercontent.com/minintamvan/PogChamp-Click/main/2.png"/>
 
-## [**Try it**](http://poggers.mininprojects.rf.gd)
+## [**Try it**](https://minintamvan.github.io/PogChamp-Click/)
 | [**Support me**](https://saweria.co/mininproject)
