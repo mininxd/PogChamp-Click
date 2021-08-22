@@ -4,6 +4,9 @@
 	src: local('impactreg'), url('./impactreg.woff') format('woff'), url('./impactreg.ttf') format('truetype');
 }
 * {
+	user-select:none;
+	border:none;
+	outline:none;
 	line-height:5px;
 	color:#fff;
   -webkit-text-stroke-width: 2px;
@@ -23,8 +26,14 @@ body {
 .pog-img {
 	position:fixed;
 	bottom:-5%;
-	left:-32px;
+	left:2px;
 	z-index:0;
+	}
+.pog-img-click {
+	image:url('1.png');
+	}
+.pog-img-click:hover {
+	image:url('2.png');
 	}
 img {
 	width:350px;
@@ -42,6 +51,7 @@ img {
 	text-align:center;
 	padding-top:1em;
 	}
+
 	
 	/*desktop*/
 @media (orientation:landscape){

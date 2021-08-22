@@ -2,6 +2,11 @@
 	<head>
 <title>pog click</title>
 		<!----FAVICON---->
+			<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
 		<link rel="icon" href="/favicon.ico">
 	<!---tab color--->
 <meta name="theme-color" content="#8e2">
@@ -12,7 +17,9 @@
 </head>
 
 <!--content-->
-<body onclick="gambar()" onload="load();">
+	
+	
+<body onmousedown="click_pog();" onmouseup="reset();"  ontouchstart="click_pog();" ontouchend="reset();" onclick="angka_count();"  onload="load();">
 
 <div class="centered-top">
 	<h1 class="pog-title">POGGERS
@@ -20,12 +27,12 @@
 	</h1>
 </div>
 <div class="pog-img">
-        <img src="1.png" id="pog_image"/>
+        <img src="2.png" id="pog_image"/>
 </div>
 
 <!--javascript-->
 <script language="javascript">
-    function gambar() {
+    function angka_count() {
     	       var angka= 0;       
    var pog = new Audio('pog.mp3');
   pog.play();
@@ -36,21 +43,20 @@
             localStorage.setItem("angka",angka);             
             document.getElementById("clicked").innerHTML = angka;
             
-            var poggers = document.getElementById('pog_image');
-            if (poggers.src.match("1.png")) {
-                poggers.src = "2.png";
-            }
-            else {
-                poggers.src = "1.png";
-            }
-        }        
+         }
+            
+            
+            function click_pog() {
+        var pog_click = document.getElementById('pog_image');
+  pog_click.setAttribute("src", "1.png");
+}
+        
+        function reset() {
+  var pog_reset = document.getElementById("pog_image");
+  pog_reset.setAttribute("src", "2.png");
+}
 
-
-
-
-
-
-  function load()
+        function load()
            {
            if(localStorage.getItem("counter")!=null)
                  {
@@ -58,9 +64,5 @@
                      document.getElementById("counterValue").innerHTML = counter;
                  }
            }
-    </script>
-    
-    
-    
-    
-    
+           
+          </script>
