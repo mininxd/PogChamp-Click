@@ -1,0 +1,34 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+		<link rel="icon" href="favicon.ico">
+	<script>
+	function load() {
+		angka = localStorage.removeItem("angka");
+        }
+        </script>
+        </head>
+        <style>
+        	@font-face {
+	font-family: 'impactreg';
+	src: url('./impactreg.eot');
+	src: local('impactreg'), url('./impactreg.woff') format('woff'), url('./impactreg.ttf') format('truetype');
+}
+body {
+	background:url('bg.gif');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	}
+        	* {color:white; line-height:3em; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: black; position:sticky; font-family: 'impactreg'; }
+        	.top {top:10px; font-size:40px;}
+        .bottom{bottom:0; font-size:50px;}
+        </style>
+        
+<body style="text-align:center;"onload="load();">
+<h1 class="top">YOUR SCORE RESETED</h1>
+<br><br><br>
+<h1 class="bottom">NOW GO BACK</h1>
+</body>
+</html>
