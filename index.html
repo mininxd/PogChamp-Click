@@ -1,6 +1,9 @@
 <html>
-	<head>
+<head>
+    <meta charset="utf-8">
 <title>pog click</title>
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <!--fonts-->
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap" rel="stylesheet">
 <!---Toastify--->
@@ -10,7 +13,7 @@
 			<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+<link rel="manifest" href="site.webmanifest">
 <meta name="msapplication-TileColor" content="#da532c">
 		<link rel="icon" href="favicon.ico">
 	<!---tab color--->
@@ -27,19 +30,35 @@
 <body onmousedown="click_pog();" onmouseup="reset();"  ontouchstart="click_pog();" ontouchend="reset();" onclick="angka_count();"  onload="load();">
 
 <div class="centered-top">
-	<h1 class="pog-title">POGGERS
-	    <p><a class="count" id="clicked"></a></p>
+	<h1 class="pog-title">POGGERS<br>
+	    <p><a class="count" id="score"></a></p>
 	</h1>
 </div>
 <div class="pog-img">
         <img src="start.png" id="pog_image"/>
 </div>
 
+
+
 <!--javascript-->
 <script language="javascript">
+	let angka= 0;       
+	let pog = new Audio('pog.mp3');
+	
+	
+	
+	function score_reset() {
+		angka = localStorage.removeItem("angka");
+		Toastify({
+className:"toastify-default",
+  text: "You just reset the score",
+  duration: 6000,
+  gravity: "bottom", 
+  position: "center", 
+  }).showToast();
+        }
+        
     function angka_count() {
-    	       let angka= 0;       
-   const pog = new Audio('pog.mp3');
   pog.play();
   const achievement = new Audio('achievement.mp3');
  
@@ -47,12 +66,12 @@
             console.log(angka);
             angka += 1;
             localStorage.setItem("angka",angka);             
-            document.getElementById("clicked").innerHTML = angka;
+            document.getElementById("score").innerHTML = angka;
 if(angka === 1) {
 	Toastify({
 className:"toastify-default",
   text: "Hello new poggers",
-  duration: 10000,
+  duration: 4000,
   gravity: "bottom", 
   position: "center", 
   }).showToast();
@@ -302,3 +321,19 @@ className:"toastify-default",
                  }
            }
           </script>
+          
+  <!--Source Code-->
+            <a class="source" target="_blank" href="https://github.com/minintamvan/PogChamp-Click">Source Code</a>
+          
+          <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+          
+          
+          
+          
+        </body>
+        </html>

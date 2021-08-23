@@ -15,6 +15,12 @@
 p {
 	font-size:70px;
 	}
+.source {
+	right:0.4em;
+	bottom:1em;
+	position:fixed;
+	font-family: 'Urbanist', sans-serif;
+	}
 body {
  background-image:url('bg.gif');
  background-repeat: no-repeat;
@@ -54,20 +60,20 @@ img {
 .toastify-default {
 	box-shadow:3px 4px #000;
 	background: #fff;
-	margin:40px;
-	width:auto;
+	margin:30px;
 	max-width:100%;
-	height:30px;
-	padding-bottom:5px;
+	height:40px;
+	padding-bottom:0px;
 	font-family: 'Urbanist', sans-serif;
 	color:#000;
 	font-size:21px;
 	}
+h1 {line-height:2em;}
 .centered-top {
 	  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
 	z-index:1;
-	  top: 15%;
+	  top: 8%;
   left: 50%;
   transform: translate(-50%, -50%);
 	position:fixed;
@@ -91,7 +97,16 @@ img {
 		font-size: 75px;
 		}
 }
-	
-	
-	
+a {color:#fff;
+	text-decoration:none;}
+a:active  { color:#fff;
+	text-decoration:none;}
+ a:link { color:#fff;
+	text-decoration:none;}
+a:visited {color:#fff;
+	text-decoration:none;}
+a:clicked{ color:#fff;
+	text-decoration:none;}
+a:hover {color:#27e;
+	text-decoration:none;}
 	
