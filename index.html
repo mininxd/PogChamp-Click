@@ -25,10 +25,7 @@
 </head>
 
 <!--content-->
-	
-	
-<body onmousedown="click_pog();" onmouseup="reset();"  ontouchstart="click_pog();" ontouchend="reset();" onclick="angka_count();"  onload="load();">
-
+	<body onmousedown="click_pog();" onmouseup="release();"  ontouchstart="click_pog();" ontouchend="release();" onclick="angka_count();"  onload="load();">
 <div class="centered-top">
 	<h1 class="pog-title">POGGERS<br>
 	    <p><a class="count" id="score"></a></p>
@@ -42,11 +39,31 @@
 
 <!--javascript-->
 <script language="javascript">
-	let angka= 0;       
+	let angka= 0;      
+	let achievement = new Audio('achievement.mp3');
 	let pog = new Audio('pog.mp3');
 	
 	
-	
+	  function click_pog() {
+            pog.currentTime = 0;
+        var pog_click = document.getElementById('pog_image');
+  pog_click.setAttribute("src", "1.png");
+}
+        function release() {
+  var pog_reset = document.getElementById("pog_image");
+  pog_reset.setAttribute("src", "2.png");
+}
+        function load()  {
+        	 if(localStorage.getItem("counter")!=null)
+                 {
+                     counter = Number(localStorage.getItem("counter"));
+                     document.getElementById("counterValue").innerHTML = counter;
+                 }
+           }
+	function maintheme() {
+	var sample = document.getElementById("foobar");
+sample.play();
+}
 	function score_reset() {
 		angka = localStorage.removeItem("angka");
 		Toastify({
@@ -60,8 +77,6 @@ className:"toastify-default",
         
     function angka_count() {
   pog.play();
-  const achievement = new Audio('achievement.mp3');
- 
             angka = Number(localStorage.getItem("angka"));
             console.log(angka);
             angka += 1;
@@ -87,7 +102,6 @@ className:"toastify-default",
   position: "center", 
 }).showToast();
 	}
-
 if(angka === 50) {
 	achievement.play();
 	Toastify({
@@ -120,6 +134,18 @@ className:"toastify-default",
   gravity: "bottom", 
   position: "center", 
   }).showToast();
+	}
+if(angka === 500) {
+	 	var rick = new Audio('rickroll.mp3');
+            	rick.play();
+	Toastify({
+className:"toastify-rickroll",
+  text: "Play rick roll",
+  duration: 5000,
+  gravity: "bottom", 
+  position: "center", 
+  }).showToast();
+  rick.currentTime = 0;
 	}
 if(angka === 1100) {
 	achievement.play();
@@ -292,34 +318,12 @@ if(angka >= 999999999) {
 		avatar:"trophy/platinum.png",
 className:"toastify-default",
   text: "POGGERS!",
-  duration: 5000,
+  duration: 400,
   gravity: "bottom", 
   position: "center", 
 }).showToast();
 	}
-	
 }
-
-            
-            function click_pog() {
-        var pog_click = document.getElementById('pog_image');
-  pog_click.setAttribute("src", "1.png");
-}
-        
-        function reset() {
-  var pog_reset = document.getElementById("pog_image");
-  pog_reset.setAttribute("src", "2.png");
-}
-
-
-        function load()
-           {
-           if(localStorage.getItem("counter")!=null)
-                 {
-                     counter = Number(localStorage.getItem("counter"));
-                     document.getElementById("counterValue").innerHTML = counter;
-                 }
-           }
           </script>
           
   <!--Source Code-->
@@ -330,10 +334,5 @@ className:"toastify-default",
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
- 
-          
-          
-          
-          
-        </body>
+      </body>
         </html>
