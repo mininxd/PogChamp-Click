@@ -11,13 +11,7 @@ let angka= 0;
   var pog_reset = document.getElementById("pog_image");
   pog_reset.setAttribute("src", "2.png");
 }
-        function load()  {
-        	 if(localStorage.getItem("counter")!=null)
-                 {
-                     counter = Number(localStorage.getItem("counter"));
-                     document.getElementById("counterValue").innerHTML = counter;
-                 }
-           }
+        
 	function maintheme() {
 	var sample = document.getElementById("foobar");
 sample.play();
@@ -33,4 +27,17 @@ className:"toastify-default",
   }).showToast();
         }
         
-  
+        
+      function load()  {
+        	 if(localStorage.getItem("angka")!=null)
+                 {
+                     counter = Number(localStorage.getItem("angka"));
+                     document.getElementById("counterValue").innerHTML = counter;
+                 }
+}
+
+       
+        
+        
+        
+        
