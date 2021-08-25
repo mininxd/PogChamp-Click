@@ -3,9 +3,10 @@ function angka_count() {
             angka = Number(localStorage.getItem("angka"));
             console.log(angka);
             angka += 1;
+            localStorage.setItem("achievement",document.getElementById("newbie-text"));             
+            localStorage.setItem("achievement",newbie);             
             localStorage.setItem("angka",angka);             
             document.getElementById("score").innerHTML = angka;
-
 if(angka === 1) {
 	Toastify({
 className:"toastify-default",
@@ -16,6 +17,9 @@ className:"toastify-default",
   }).showToast();
 	}
 if(angka === 10) {
+	var newbie = document.getElementById("newbie");
+	  newbie.setAttribute("src", "trophy/bronze.png");
+  document.getElementById("newbie-text").innerHTML = "Newbie";
 	achievement.play();
 	Toastify({
 		avatar:"trophy/bronze.png",
@@ -27,6 +31,10 @@ className:"toastify-default",
 }).showToast();
 	}
 if(angka === 50) {
+	var newbie = document.getElementById("starter");
+	  starter.setAttribute("src", "trophy/bronze.png");
+  document.getElementById("starter-text").innerHTML = "Starter";
+	
 	achievement.play();
 	Toastify({
 		avatar:"trophy/bronze.png",
@@ -37,7 +45,12 @@ className:"toastify-default",
   position: "center", 
 }).showToast();
 	}
+	//200
 	if(angka === 200) {
+		var tap = document.getElementById("taptap");
+	  tap.setAttribute("src", "trophy/bronze.png");
+  document.getElementById("taptap-text").innerHTML = "Tap tap tap";
+	
 	achievement.play();
 	Toastify({
 		avatar:"trophy/bronze.png",
@@ -48,7 +61,12 @@ className:"toastify-default",
   position: "center", 
   }).showToast();
 	}
+	//500
 if(angka === 500) {
+	var fast = document.getElementById("urfast");
+	  fast.setAttribute("src", "trophy/bronze.png");
+  document.getElementById("urfast-text").innerHTML = "ur fast...";
+	
 	achievement.play();
 	Toastify({
 		avatar:"trophy/bronze.png",
