@@ -50,7 +50,7 @@ img {
 .toastify-long-text {
 	box-shadow:3px 4px #000;
 	background: #fff;
-	margin:70px;
+	margin:40px;
 	width:auto;
 	max-width:100%;
 	height:auto;
@@ -61,7 +61,7 @@ img {
 .toastify-default {
 	box-shadow:3px 4px #000;
 	background: #fff;
-	margin:70px;
+	margin:30px;
 	max-width:100%;
 	height:40px;
 	padding-bottom:0px;
@@ -72,7 +72,7 @@ img {
 	.toastify-rickroll {
 	box-shadow:3px 4px #000;
 	background: #3f9;
-	margin:70px;
+	margin:30px;
 	max-width:100%;
 	height:40px;
 	padding-bottom:0px;
