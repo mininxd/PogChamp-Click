@@ -3,6 +3,8 @@ let angka= 0;
 	let achievement = new Audio('achievement.mp3');
 
 	  function click_pog() {
+		document.getElementById("tombolA").style.display = "block";
+   document.getElementById("tombolL").style.display = "block";
             pog.currentTime = 0;
         var pog_click = document.getElementById('pog_image');
   pog_click.setAttribute("src", "1.png");
@@ -29,6 +31,8 @@ className:"toastify-default",
         
         
       function load()  {
+      	document.getElementById("tombolA").style.display = "none";
+      	document.getElementById("tombolL").style.display = "none";
         	 if(localStorage.getItem("angka")!=null)
                  {
                      counter = Number(localStorage.getItem("angka"));
@@ -36,8 +40,10 @@ className:"toastify-default",
                  }
 }
 
-       
-        
-        
-        
+
+
+
+
+
+
         

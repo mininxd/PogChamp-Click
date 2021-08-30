@@ -53,21 +53,46 @@
 
 
 
-<!--achevement menu-->
-	<div class="btn-modal"><button type="button" class="btn btn-custom" data-toggle="modal" data-target="#exampleModal">
+<!--Tombol Modal-->
+	<div class="btn-modal">
+<button id="tombolA" type="button" class="btn btn-custom" data-toggle="modal" data-target="#AchievementModal">
 <i class="fa fa-trophy"></i>
-</button></div>
+</button><br><br>
+<button id="tombolL" type="button" class="btn btn-custom" data-toggle="modal" data-target="#liveChat">
+<i class="fa fa-comment-dots"></i>
+</div>
 
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable" role="document">
+	<!-- LiveChat -->
+	<div id="liveChat" class="modal fade" role="dialog">
+		<div class="livechat modal-dialog">
+			<!-- konten modal-->
+			<div class="modal-content">
+				<!-- heading modal -->
+				<div class="modal-header">
+					<h3 class="modal-title" > Live Chat</h5>
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i style="color:#fff;" class="fa fa-close"></i></button>
+					</div>
+				<!-- body modal -->
+				<div class="modal-body">
+					<iframe src="https://www5.cbox.ws/box/?boxid=928039&boxtag=lbahRq" width="100%" height="250" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+   </div>
+
+
+<!-- Achievement -->
+<div id="AchievementModal" class="modal fade" role="dialog">
+  <div class="achievement-dialog modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="ModalLabel">Achievement</h5> 
+        <h4 class="modal-title" id="ModalLabel">Achievement</h5> 
         <button type="button" class="btn btn-secondary" data-dismiss="modal"><i style="color:#fff;" class="fa fa-close"></i></button>
       </div>
       <div class="modal-body">
+
  <!--Achievement-->
  	<div class="container">
  	<div class="row">
@@ -97,43 +122,15 @@
     </div>
     <p id="urfast-text" class="text-modal">-</p> 
     </div><br>
-
-<div class="row">
- 	<div class="col-auto"> 
-      <img src="trophy/disabled.png" style="padding:5px; border-radius:3px; border:1px solid #000; max-width: 50px;"  class="img-fluid rounded-start">
-    </div>
-    <p class="text-modal">Dummy</p> 
-    </div> <br>
-    	
-     	<div class="row">
- 	<div class="col-auto"> 
-      <img src="trophy/disabled.png" style="padding:5px; border-radius:3px; border:1px solid #000; max-width: 50px;"  class="img-fluid rounded-start">
-    </div>
-    <p class="text-modal">Dummy</p> 
-    </div><br>
-    	
-    	<div class="row">
- 	<div class="col-auto"> 
-      <img src="trophy/disabled.png" style="padding:5px; border-radius:3px; border:1px solid #000; max-width: 50px;"  class="img-fluid rounded-start">
-    </div>
-    <p class="text-modal">Dummy</p> 
-    </div> <br>
-    	
-     	<div class="row">
- 	<div class="col-auto"> 
-      <img src="trophy/disabled.png" style="padding:5px; border-radius:3px; border:1px solid #000; max-width: 50px;"  class="img-fluid rounded-start">
-    </div>
-    <p class="text-modal">Dummy</p> 
-    </div><br>
-    
-    </div>
-  
- 
- 
- 
- 
  
       </div>
+      <div class="container">
+ 	<div class="row">
+ 	<div class="col-auto"> 
+      <img id="newbie"  src="trophy/disabled.png" style="padding:5px; border-radius:3px; border:1px solid #000; max-width: 50px;"  class="img-fluid rounded-start">
+    </div>
+    <p id="newbie-text" class="text-modal">-</p> 
+    </div> <br>
       <div class="modal-footer"><p class="warning"> Be careful, no save game, if you reload or refresh the page, your achievement will be deleted</p>
               </div>
     </div>
@@ -141,5 +138,9 @@
 </div>
 
 
+
+
+ 
+ 
       </body>
         </html>
