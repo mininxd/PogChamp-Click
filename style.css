@@ -11,7 +11,6 @@
 	color:#fff;
 	font-family: 'impactreg';
 	}
-.warning {line-height:16px; color:#000; font-family: 'Urbanist', sans-serif; font-size:12px; opacity:0.5;}
 	h1{font-size:65px;}
 p {
 	font-size:70px;
@@ -46,6 +45,7 @@ img {
 	}
 .count {
 	transition: all 0.2s ease-in-out; 
+	animation: score 0.3s linear;
 	}
 .toastify-long-text {
 	box-shadow:3px 4px #000;
@@ -80,25 +80,6 @@ img {
 	color:#000;
 	font-size:21px;
 	}
-.text-modal {color:#000;
- font-size:20px; 
-font-family: 'Urbanist', sans-serif; 
-padding:20px 0 0 4px;
-}
-.modal, .modal-title, .modal-body, .modal-content, .modal-header .modal-footer {
-color:black;
- font-family: 'Urbanist', sans-serif;
-}
-.btn-custom{background:#fff;}
-.fa {color:#000; padding:2px 0 2px 0;}
-.btn { color:white; font-family: 'Urbanist', sans-serif;}
-.btn-modal { 
-	outline:0;
-z-index:5;
-position:fixed;
-bottom:2%;
-left:1%;
-}
 h1 {line-height:2em;}
 .centered-top {
 	  -webkit-text-stroke-width: 2px;
@@ -111,6 +92,34 @@ h1 {line-height:2em;}
 	text-align:center;
 	padding-top:1em;
 	}
+	
+
+	@keyframes score {
+		0% {
+			font-size:90px;
+			transform:rotate(0deg);
+			}
+			25% {
+				transform:rotate(20deg);
+				}
+		40% {
+			
+			font-size:100px;
+			transform:rotate(45deg);
+			}
+		60% {
+			font-size:130px;
+			transform:rotate(45deg);
+			}
+		70% {
+			font-size:75px;
+			transform:rotate(0deg);
+			}
+		100% {
+			font-size:50px;
+			transform:rotate(0deg);
+			}
+		}
 
 	
 	/*desktop*/
@@ -140,12 +149,4 @@ a:clicked{ color:#fff;
 	text-decoration:none;}
 a:hover {color:#27e;
 	text-decoration:none;}
-
-.livechat{
-  margin:5% 2em 0 2em;
-	}
-.achievement-dialog {
-	margin:2% 0.3em 1em 0.3em;
-	}
-	
 	
